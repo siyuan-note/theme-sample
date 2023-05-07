@@ -1,3 +1,5 @@
+[中文](https://github.com/siyuan-note/theme-sample/blob/main/README.md)
+
 # SiYuan theme sample
 
 ## Get started
