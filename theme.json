@@ -3,6 +3,10 @@
   "author": "Vanessa",
   "url": "https://github.com/siyuan-note/theme-sample",
   "version": "0.0.1",
+  "displayName": {
+    "default": "Theme Sample",
+    "zh_CN": "主题示例"
+  },
   "description": {
     "default": "This is a theme sample",
     "zh_CN": "这是一个主题示例"

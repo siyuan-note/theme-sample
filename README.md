@@ -17,7 +17,8 @@
 * README*.md
 * theme.css
 
-Note: The theme.js is deprecated, it will be removed in the future, see [this issue](https://github.com/siyuan-note/siyuan/issues/8178) for more details.
+Note: The theme.js is deprecated, it will be removed in the future,
+see [this issue](https://github.com/siyuan-note/siyuan/issues/8178) for more details.
 
 ## theme.json
 
@@ -27,6 +28,10 @@ Note: The theme.js is deprecated, it will be removed in the future, see [this is
   "author": "Vanessa",
   "url": "https://github.com/siyuan-note/theme-sample",
   "version": "0.0.1",
+  "displayName": {
+    "default": "Theme Sample",
+    "zh_CN": "主题示例"
+  },
   "description": {
     "default": "This is a theme sample",
     "zh_CN": "这是一个主题示例"
@@ -58,6 +63,9 @@ Note: The theme.js is deprecated, it will be removed in the future, see [this is
 * `author`: Theme author name
 * `url`: Theme repo URL
 * `version`: Theme version number, it is recommended to follow the [semver](https://semver.org/) specification
+* `displayName`: Widget display name, mainly used for display in the marketplace list, supports multiple languages
+    * `default`: Default language, must exist
+    * `zh_CN`, `en_US` and other languages: optional, it is recommended to provide at least Chinese and English
 * `description`: Theme description, mainly used for display in the marketplace list, supports multiple languages
     * `default`: Default language, must exist
     * `zh_CN`, `en_US` and other languages: optional, it is recommended to provide at least Chinese and English
