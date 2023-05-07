@@ -70,6 +70,7 @@ Note: The theme.js is deprecated, it will be removed in the future, see [this is
     * `patreon`: Patreon name
     * `github`: GitHub login name
     * `custom`: Custom sponsorship link list
+* `modes`: Theme mode list, currently only supports `light` and `dark`
 
 ## Package
 
