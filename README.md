@@ -1,30 +1,108 @@
 # SiYuan theme sample
 
-## First time developing themes?
+## Get started
 
-* Make a copy of this repo as a template with the "Use this template" button (login to GitHub if you don't see it)
-* Clone your repo to a local development folder. For convenience, you can place this folder in your `{workspace}/conf/appearance/themes` folder
-* Install [NodeJS](https://nodejs.org/en/download) and [pnpm](https://pnpm.io/installation), then run `pnpm i` in the command line under your repo folder
-* Run `pnpm run dev` to compile your theme from `index.ts`
+* Make a copy of this repo as a template with the <kbd>Use this template</kbd> button, please note that the repo name
+  must be the same as the theme name
+* Clone your repo to a local development folder. For convenience, you can place this folder in
+  your `{workspace}/conf/appearance/themes/` folder
 
 ## Development
 
-* Update theme.json, README.md, icon.png (96 * 96) and preview.png (1024 * 768)
-* [API](https://github.com/siyuan-note/petal)
+* theme.json
+* icon.png (160*160)
+* preview.png (1024*768)
+* README*.md
+* theme.css
 
-## List on the marketplace
+Note: The theme.js is deprecated, it will be removed in the future, see [this issue](https://github.com/siyuan-note/siyuan/issues/8178) for more details.
 
-* `pnpm run build` to generate package.zip
-* Create a new GitHub release using your new version number as the "Tag version". See here for an example: https://github.com/siyuan-note/theme-sample/releases
-* Upload the file package.zip as binary attachments
-* Publish the release
-
-If it is the first release, please create a pull request to the [Community Bazaar](https://github.com/siyuan-note/bazaar) repository and modify the themes.json file in it. This file is the index of all community theme repositories, the format is:
+## theme.json
 
 ```json
 {
-   "repos": [
-     "username/reponame"
-   ]
+  "name": "theme-sample",
+  "author": "Vanessa",
+  "url": "https://github.com/siyuan-note/theme-sample",
+  "version": "0.0.1",
+  "description": {
+    "default": "This is a theme sample",
+    "zh_CN": "这是一个主题示例"
+  },
+  "readme": {
+    "default": "README.md",
+    "zh_CN": "README_zh_CN.md"
+  },
+  "i18n": [
+    "en_US",
+    "zh_CN"
+  ],
+  "funding": {
+    "openCollective": "b3log",
+    "patreon": "",
+    "github": "",
+    "custom": [
+      "https://ld246.com/sponsor"
+    ]
+  },
+  "modes": [
+    "light"
+  ]
 }
 ```
+
+* `name`: Theme name, must be the same as the repo name, and must be unique globally (no duplicate theme names in the
+  marketplace)
+* `author`: Theme author name
+* `url`: Theme repo URL
+* `version`: Theme version number, it is recommended to follow the [semver](https://semver.org/) specification
+* `description`: Theme description, mainly used for display in the marketplace list, supports multiple languages
+    * `default`: Default language, must exist
+    * `zh_CN`, `en_US` and other languages: optional, it is recommended to provide at least Chinese and English
+* `readme`: readme file name, mainly used to display in the marketplace details page, supports multiple languages
+    * `default`: Default language, must exist
+    * `zh_CN`, `en_US` and other languages: optional, it is recommended to provide at least Chinese and English
+* `i18n`: Theme supported language list
+* `funding`: Theme sponsorship information
+    * `openCollective`: Open Collective name
+    * `patreon`: Patreon name
+    * `github`: GitHub login name
+    * `custom`: Custom sponsorship link list
+
+## Package
+
+No matter which method is used to compile and package, we finally need to generate a package.zip, which contains at
+least the following files:
+
+* icon.png
+* preview.png
+* README*.md
+* theme.css
+* theme.json
+
+## List on the marketplace
+
+* Generate the package.zip
+* Create a new GitHub release using your new version number as the "Tag version". See here for an
+  example: https://github.com/siyuan-note/theme-sample/releases
+* Upload the file package.zip as binary attachments
+* Publish the release
+
+If it is the first release, please create a pull request to
+the [Community Bazaar](https://github.com/siyuan-note/bazaar) repository and modify the themes.json file in it. This
+file is the index of all community theme repositories, the format is:
+
+```json
+{
+  "repos": [
+    "username/reponame"
+  ]
+}
+```
+
+After the PR is merged, the bazaar will automatically update the index and deploy through GitHub Actions. When releasing
+a new version of the theme in the future, you only need to follow the above steps to create a new release, and you
+don't need to PR the community bazaar repo.
+
+Under normal circumstances, the community bazaar repo will automatically update the index and deploy every hour,
+and you can check the deployment status at https://github.com/siyuan-note/bazaar/actions.
