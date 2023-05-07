@@ -1,4 +1,4 @@
-[中文](https://github.com/siyuan-note/theme-sample/blob/main/README.md)
+[中文](https://github.com/siyuan-note/theme-sample/blob/main/README_zh_CN.md)
 
 # SiYuan theme sample
 
