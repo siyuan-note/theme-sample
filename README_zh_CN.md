@@ -4,7 +4,7 @@
 
 ## 开始
 
-* 通过 <kbd>Use this template</kbd> 按钮将该库文件复制到你自己的库中，请注意库名必须和主题名称一致
+* 通过 <kbd>Use this template</kbd> 按钮将该库文件复制到你自己的库中，请注意库名必须和主题名称一致，默认分支必须为 `main`
 * 将你的库克隆到本地开发文件夹中，为了方便可以直接将开发文件夹放置在 `{workspace}/conf/appearance/themes/` 下
 
 ## 开发
