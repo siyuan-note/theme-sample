@@ -26,6 +26,7 @@
   "author": "Vanessa",
   "url": "https://github.com/siyuan-note/theme-sample",
   "version": "0.0.1",
+  "minAppVersion": "2.9.0",
   "displayName": {
     "default": "Theme Sample",
     "zh_CN": "主题示例"
@@ -60,6 +61,8 @@
 * `author`：主题作者名
 * `url`：主题仓库地址
 * `version`：主题版本号，建议遵循 [semver](https://semver.org/lang/zh-CN/) 规范
+* `minAppVersion`：主题支持的最低版本号，建议遵循 [semver](https://semver.org/lang/zh-CN/) 规范
+* `minAppVersion`：主题支持的最低思源笔记版本号
 * `displayName`：模板显示名称，主要用于模板集市列表中显示，支持多语言
     * `default`：默认语言，必须存在
     * `zh_CN`、`en_US` 等其他语言：可选，建议至少提供中文和英文

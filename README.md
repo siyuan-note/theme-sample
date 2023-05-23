@@ -28,6 +28,7 @@ see [this issue](https://github.com/siyuan-note/siyuan/issues/8178) for more det
   "author": "Vanessa",
   "url": "https://github.com/siyuan-note/theme-sample",
   "version": "0.0.1",
+  "minAppVersion": "2.9.0",
   "displayName": {
     "default": "Theme Sample",
     "zh_CN": "主题示例"
@@ -63,6 +64,7 @@ see [this issue](https://github.com/siyuan-note/siyuan/issues/8178) for more det
 * `author`: Theme author name
 * `url`: Theme repo URL
 * `version`: Theme version number, it is recommended to follow the [semver](https://semver.org/) specification
+* `minAppVersion`: Minimum version number of SiYuan required to use this theme
 * `displayName`: Widget display name, mainly used for display in the marketplace list, supports multiple languages
     * `default`: Default language, must exist
     * `zh_CN`, `en_US` and other languages: optional, it is recommended to provide at least Chinese and English
