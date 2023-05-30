@@ -25,8 +25,8 @@
   "name": "theme-sample",
   "author": "Vanessa",
   "url": "https://github.com/siyuan-note/theme-sample",
-  "version": "0.0.1",
-  "minAppVersion": "2.9.0",
+  "version": "0.0.3",
+  "minAppVersion": "2.8.8",
   "displayName": {
     "default": "Theme Sample",
     "zh_CN": "主题示例"
@@ -40,7 +40,7 @@
     "zh_CN": "README_zh_CN.md"
   },
   "funding": {
-    "openCollective": "b3log",
+    "openCollective": "",
     "patreon": "",
     "github": "",
     "custom": [
