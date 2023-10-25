@@ -49,6 +49,9 @@
   },
   "modes": [
     "light"
+  ],
+  "keywords": [
+    "sample", "示例"
   ]
 }
 ```
@@ -74,6 +77,7 @@
     * `github`：GitHub 登录名
     * `custom`：自定义赞助链接列表
 * `modes`：主题支持的模式列表，可选值为 `light` 和 `dark`
+* `keywords`：搜索关键字列表，用于集市搜索功能
 
 ## 打包
 

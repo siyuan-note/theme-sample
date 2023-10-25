@@ -51,6 +51,9 @@ see [this issue](https://github.com/siyuan-note/siyuan/issues/8178) for more det
   },
   "modes": [
     "light"
+  ],
+  "keywords": [
+    "sample", "示例"
   ]
 }
 ```
@@ -76,6 +79,7 @@ see [this issue](https://github.com/siyuan-note/siyuan/issues/8178) for more det
     * `github`: GitHub login name
     * `custom`: Custom sponsorship link list
 * `modes`: Theme mode list, currently only supports `light` and `dark`
+* `keywords`: Search keyword list, used for marketplace search function
 
 ## Package
 
