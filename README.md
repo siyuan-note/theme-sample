@@ -16,9 +16,7 @@
 * preview.png (1024*768)
 * README*.md
 * theme.css
-
-Note: The theme.js is deprecated, it will be removed in the future,
-see [this issue](https://github.com/siyuan-note/siyuan/issues/8178) for more details.
+* theme.js
 
 ## theme.json
 

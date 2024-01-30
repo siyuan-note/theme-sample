@@ -14,9 +14,7 @@
 * preview.png (1024*768)
 * README*.md
 * theme.css
-
-注意：不要使用 theme.js
-机制，未来会移除对它的支持，详情请参考 [这个 issue](https://github.com/siyuan-note/siyuan/issues/8178)。
+* theme.js
 
 ## theme.json
 
