@@ -14,7 +14,8 @@
 * preview.png (1024*768)
 * README*.md
 * theme.css
-* theme.js
+
+注意：以前可选的 `theme.js` 文件已废弃，新主题不应再包含该文件。说明见 [siyuan-note/bazaar#1821](https://github.com/siyuan-note/bazaar/issues/1821)。
 
 ## theme.json
 

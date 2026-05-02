@@ -16,7 +16,8 @@
 * preview.png (1024*768)
 * README*.md
 * theme.css
-* theme.js
+
+Note: The previously optional `theme.js` file is deprecated; new themes should not include it. See [siyuan-note/bazaar#1821](https://github.com/siyuan-note/bazaar/issues/1821).
 
 ## theme.json
 
