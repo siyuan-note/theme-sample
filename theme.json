@@ -2,19 +2,19 @@
   "name": "theme-sample",
   "author": "Vanessa",
   "url": "https://github.com/siyuan-note/theme-sample",
-  "version": "0.0.3",
-  "minAppVersion": "2.8.8",
+  "version": "0.0.4",
+  "minAppVersion": "3.7.0",
   "displayName": {
     "default": "Theme Sample",
-    "zh_CN": "主题示例"
+    "zh-CN": "主题示例"
   },
   "description": {
     "default": "This is a theme sample",
-    "zh_CN": "这是一个主题示例"
+    "zh-CN": "这是一个主题示例"
   },
   "readme": {
     "default": "README.md",
-    "zh_CN": "README_zh_CN.md"
+    "zh-CN": "README_zh-CN.md"
   },
   "funding": {
     "openCollective": "",

@@ -1,3 +1,15 @@
 :root {
     --b3-theme-primary: #d23f31;
 }
+
+/*
+ * 中/日/韩字体特化示范（必须使用 BCP 47 标签语法）：
+ *
+ * :root:lang(zh-CN) { --b3-font-family: "PingFang SC", "Microsoft YaHei", sans-serif; }
+ * :root:lang(zh-TW) { --b3-font-family: "PingFang TC", "Microsoft JhengHei", sans-serif; }
+ * :root:lang(ja)    { --b3-font-family: "Hiragino Sans", "Yu Gothic", sans-serif; }
+ * :root:lang(ko)    { --b3-font-family: "Apple SD Gothic Neo", "Malgun Gothic", sans-serif; }
+ *
+ * 注意：不要使用下划线形式（如 :lang(zh_CN)），后者在浏览器环境中无效
+ * 详见 https://github.com/siyuan-note/siyuan/issues/7098
+ */
