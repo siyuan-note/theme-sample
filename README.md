@@ -1,4 +1,4 @@
-[中文](https://github.com/siyuan-note/theme-sample/blob/main/README_zh-CN.md)
+[中文](https://github.com/siyuan-note/theme-sample/blob/main/README.zh-CN.md)
 
 # SiYuan theme sample
 
@@ -38,7 +38,7 @@ Note: The previously optional `theme.js` file is deprecated; new themes should n
   },
   "readme": {
     "default": "README.md",
-    "zh-CN": "README_zh-CN.md"
+    "zh-CN": "README.zh-CN.md"
   },
   "funding": {
     "openCollective": "",
