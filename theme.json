@@ -27,6 +27,9 @@
   "modes": [
     "light"
   ],
+  "frontends": [
+    "all"
+  ],
   "keywords": [
     "sample", "示例"
   ]

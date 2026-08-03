@@ -51,6 +51,9 @@ Note: The previously optional `theme.js` file is deprecated; new themes should n
   "modes": [
     "light"
   ],
+  "frontends": [
+    "all"
+  ],
   "keywords": [
     "sample", "示例"
   ]
@@ -78,6 +81,16 @@ Note: The previously optional `theme.js` file is deprecated; new themes should n
     * `github`: GitHub login name
     * `custom`: Custom sponsorship link list
 * `modes`: Theme mode list, currently only supports `light` and `dark`
+* `frontends`: Supported frontend environments. Optional values are `desktop`, `desktop-window`, `mobile`, `browser-desktop`, `browser-mobile`, and `all`
+    * `desktop`: Desktop application
+    * `desktop-window`: A standalone desktop window converted from a tab
+    * `mobile`: Mobile application
+    * `browser-desktop`: Desktop browser using the network serving mode
+    * `browser-mobile`: Mobile browser using the network serving mode
+    * `all`: All frontend environments
+    * Matching is exact. Include `browser-desktop` explicitly if the theme supports the desktop browser
+    * A missing or empty field, or `["all"]`, means all frontend environments are supported. Do not mix `all` with other values
+    * If the theme excludes any frontend, set `minAppVersion` to the first SiYuan version that supports theme frontend compatibility because older clients ignore this field
 * `keywords`: Search keyword list, used for marketplace search function
 
 ## Package

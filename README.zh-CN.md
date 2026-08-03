@@ -49,6 +49,9 @@
   "modes": [
     "light"
   ],
+  "frontends": [
+    "all"
+  ],
   "keywords": [
     "sample", "示例"
   ]
@@ -76,6 +79,16 @@
     * `github`：GitHub 登录名
     * `custom`：自定义赞助链接列表
 * `modes`：主题支持的模式列表，可选值为 `light` 和 `dark`
+* `frontends`：主题支持的前端环境，可选值为 `desktop`、`desktop-window`、`mobile`、`browser-desktop`、`browser-mobile` 和 `all`
+    * `desktop`：桌面应用
+    * `desktop-window`：桌面端页签转换的独立窗口
+    * `mobile`：移动应用
+    * `browser-desktop`：使用网络伺服模式的桌面端浏览器
+    * `browser-mobile`：使用网络伺服模式的移动端浏览器
+    * `all`：所有前端环境
+    * 该字段使用精确匹配；如果主题支持桌面端浏览器，需要显式包含 `browser-desktop`
+    * 字段缺失、空数组或 `["all"]` 表示支持所有前端环境；`all` 不得与其他值混用
+    * 如果主题排除了任何前端，需要将 `minAppVersion` 设置为首个支持主题前端兼容性的思源版本，因为旧版客户端会忽略该字段
 * `keywords`：搜索关键字列表，用于集市搜索功能
 
 ## 打包
