@@ -2,7 +2,7 @@
   "name": "theme-sample",
   "author": "Vanessa",
   "url": "https://github.com/siyuan-note/theme-sample",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "minAppVersion": "3.7.0",
   "displayName": {
     "default": "Theme Sample",
@@ -16,6 +16,8 @@
     "default": "README.md",
     "zh-CN": "README.zh-CN.md"
   },
+  "icon": "icon.png",
+  "preview": "preview.png",
   "funding": {
     "openCollective": "",
     "patreon": "",
