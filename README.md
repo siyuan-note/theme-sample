@@ -68,7 +68,7 @@ Note: The previously optional `theme.js` file is deprecated; new themes should n
 * `url`: Theme repo URL
 * `version`: Theme version number, it is recommended to follow the [semver](https://semver.org/) specification
 * `minAppVersion`: Minimum version number of SiYuan required to use this theme
-* `displayName`: Widget display name, mainly used for display in the marketplace list, supports multiple languages
+* `displayName`: Theme display name, mainly used for display in the marketplace list, supports multiple languages
     * `default`: Default language, must exist
     * `zh-CN`, `en` and other languages: optional, must be [BCP 47](https://tools.ietf.org/html/bcp47) tags (e.g. `zh-CN`, `zh-TW`, `en`, `ja`, `pt-BR`)
 * `description`: Theme description, mainly used for display in the marketplace list, supports multiple languages
@@ -118,21 +118,6 @@ least the following files:
 * Upload the file package.zip as binary attachments
 * Publish the release
 
-If it is the first release, please create a pull request to
-the [Community Bazaar](https://github.com/siyuan-note/bazaar) repository and modify the themes.json file in it. This
-file is the index of all community theme repositories, the format is:
+For the first release, fork the [community bazaar repository](https://github.com/siyuan-note/bazaar), add one `owner/repo` line to `themes.txt` in its root, and open a PR against `main`. Use one repository per line without commas or empty lines, and add only one new package per PR. See [Submitting a bazaar package](https://github.com/siyuan-note/bazaar#submitting-a-bazaar-package) for the full process and review rules.
 
-```json
-{
-  "repos": [
-    "username/reponame"
-  ]
-}
-```
-
-After the PR is merged, the bazaar will automatically update the index and deploy through GitHub Actions. When releasing
-a new version of the theme in the future, you only need to follow the above steps to create a new release, and you
-don't need to PR the community bazaar repo.
-
-Under normal circumstances, the community bazaar repo will automatically update the index and deploy every hour,
-and you can check the deployment status at https://github.com/siyuan-note/bazaar/actions.
+After the PR is merged, the bazaar updates its index automatically. For subsequent updates, increase `version` in the package manifest and publish a regular GitHub Release containing `package.zip`; no additional listing PR is needed. See [Updating a bazaar package](https://github.com/siyuan-note/bazaar#updating-a-bazaar-package) for update timing and troubleshooting, and check deployment status in the [Stage workflow](https://github.com/siyuan-note/bazaar/actions/workflows/stage.yml).
