@@ -6,8 +6,9 @@
 
 * Make a copy of this repo as a template with the <kbd>Use this template</kbd> button, please note that the repo name
   must be the same as the theme name, the default branch must be `main`
-* Clone your repo to a local development folder. For convenience, you can place this folder in
-  your `{workspace}/conf/appearance/themes/` folder
+* Clone your repo to a local development folder. For convenience, you can place this folder in your `{workspace}/data/themes/` folder
+
+Theme files, updates, and uninstallations are shared by SiYuan data sync; each device keeps its own theme selection. Older clients can continue syncing notes without upgrading and transport internal package archives as ordinary files. Clients that support this feature apply theme package changes; older clients do not use the new theme directory. Upgrade migration preserves the original local files for recovery. Development changes inside this folder also sync; keep experiments outside the workspace or exclude the whole theme folder from sync.
 
 ## Development
 
@@ -96,7 +97,7 @@ Note: The previously optional `theme.js` file is deprecated; new themes should n
     * `browser-mobile`: Mobile browser using the network serving mode
     * `all`: All frontend environments
     * Matching is exact. Include `browser-desktop` explicitly if the theme supports the desktop browser
-    * A missing or empty field, or `["all"]`, means all frontend environments are supported. Do not mix `all` with other values
+    * A missing or empty field supports desktop frontends only. Mobile frontends require an explicit `mobile`, `browser-mobile`, or `all`; `["all"]` supports every frontend. Do not mix `all` with other values
     * If the theme excludes any frontend, set `minAppVersion` to the first SiYuan version that supports theme frontend compatibility because older clients ignore this field
 * `keywords`: Search keyword list, used for marketplace search function
 
