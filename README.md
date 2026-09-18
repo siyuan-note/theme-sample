@@ -8,7 +8,7 @@
   must be the same as the theme name, the default branch must be `main`
 * Clone your repo to a local development folder. For convenience, you can place this folder in your `{workspace}/data/themes/` folder
 
-Theme files, updates, and uninstallations are shared by SiYuan data sync; each device keeps its own theme selection. Older clients can continue syncing notes without upgrading and transport internal package archives as ordinary files. Clients that support this feature apply theme package changes; older clients do not use the new theme directory. Upgrade migration preserves the original local files for recovery. Development changes inside this folder also sync; keep experiments outside the workspace or exclude the whole theme folder from sync.
+Theme files sync with the workspace; each device chooses its own theme. Development changes in this folder also sync, so keep local-only work outside the workspace or add the development folder to the sync ignore rules.
 
 ## Development
 
